@@ -1,0 +1,296 @@
+2022-05-03 14:13:28 [main] INFO KHAN Logger successfully initialized.
+2022-05-03 14:13:28 [main] INFO Load configuration file : {transaction.trace.threshold.under.detail.enabled=false, user.interceptor.file=user-interceptor.conf, user.charset.encoding=UTF-8, user.tracking.v2.enabled=false, transaction.exclude.user.agent.patterns=^openmaru-health-check$, transaction.trace.sampling.interval=1, sql.capture.enabled=true, log.backup.index=3, ubt.check.user.count=100, activeUser.countFirstRequest=false, enable.tid.header=true, transaction.trace.sql.stacktrace.threshold=30000, transaction.trace.header.keys=, khan.host=cDIwMjIwNDAwMDQuYXBtLmEtYXBuZTIub3Blbm1hcnUuaW8=, user.tracking.v2.login.key=session.loginId, ubt.check.type=ip, transaction.trace.sql.parameterize=false, ubt.check.enabled=false, transaction.with.external.http.error.view.enabled=true, database.conn_leak.warning=false, application.name=testapm11, transaction.exclude.url.suffix=.gif,.swf,.css,.hwp,.xls,.xlsx,.eot,.pptx,.ppt,.asf,.pdf,.txt,.flv,.mp3,.mp4,.doc,.html,.wmv,.jpg,.zip,.wav,.png,.ttf,.mov,.ico,.js,.woff,.xml,.htc,.NewProxyConnection,.DelegatingConnection,.SqlSessionTemplate,.CUBRIDConnection,.PoolableConnection,.WrappedConnection,/bea_wls_deployment_internal/DeploymentService,.GIF,.SWF,.CSS,.HWP,.XLS,.XLSX,.EOT,.PPTX,.PPT,.ASF,.PDF,.TXT,.FLV,.MP3,.MP4,.DOC,.HTML,.WMV,.JPG,.ZIP,.WAV,.PNG,.TTF,.MOV,.ICO,.JS,.WOFF,.XML,.HTC, transaction.trace.max.line=2000, agent.type=WAS, khan.session.manager.enabled=false, instance.id=testapm11-${IPADDR:3}, apdex.threshold=3.0, ubt.check.time.interval=1, transaction.with.exception.view.enabled=true, user.tracking.v2.login.enabled=false, khan.tls=true, transaction.trace.enabled=true, enable.logging.interceptor=false, user.key=NIL, log.file=khan-agent-${INSTANCEID}.log, transaction.trace.session.keys=, user.tracking.mode=2, transaction.exclude.url.patterns=\*, ubt.check.alert.dup.prevent=30, log.level=INFO, khan.port=443, log.rotate.size=10240000, transaction.with.external.http.error.codes=, transaction.trace.threshold=500, trace.logging.levels=WARN,ERROR,FATAL, include.packages=, transaction.exclude.url.suffix.exclude=true, transaction.trace.cookie.keys=JSESSIONID, active.session.count.enabled=true}
+2022-05-03 14:13:28 [main] INFO user.tracking.mode=2
+2022-05-03 14:13:28 [main] INFO user.tracking.client.ip.selection=-1
+2022-05-03 14:13:28 [main] INFO user.thinktime.minutes=5
+2022-05-03 14:13:28 [main] INFO user.tracking.v2.enabled : false
+2022-05-03 14:13:28 [main] INFO user.tracking.v2.login.enabled : false
+2022-05-03 14:13:28 [main] INFO user.tracking.v2.login.key : session.loginId
+2022-05-03 14:13:28 [main] INFO enable.tid.header : true
+2022-05-03 14:13:28 [main] WARNING enable.filter.interceptor is not valid
+2022-05-03 14:13:28 [main] WARNING enable.ibatis.interceptor is not valid
+2022-05-03 14:13:28 [main] WARNING enable.mybatis.interceptor is not valid
+2022-05-03 14:13:28 [main] WARNING enable.http.interceptor is not valid
+2022-05-03 14:13:28 [main] WARNING enable.springbatch.interceptor is not valid
+2022-05-03 14:13:28 [main] INFO enable.logging.interceptor : false
+2022-05-03 14:13:28 [main] INFO transaction.trace.header.enabled=false
+2022-05-03 14:13:28 [main] INFO transaction.trace.cookie.enabled=true
+2022-05-03 14:13:28 [main] INFO transaction.trace.cookie.keys=[JSESSIONID]
+2022-05-03 14:13:28 [main] INFO transaction.trace.session.enabled=false
+2022-05-03 14:13:28 [main] INFO transaction.trace.parameter.keys is not defined.
+2022-05-03 14:13:28 [main] INFO database.pool.stat.include.patterns is empty
+2022-05-03 14:13:28 [main] INFO database.pool.stat.exclude.patterns is empty
+2022-05-03 14:13:28 [main] INFO transaction.errorpage.url.patterns
+2022-05-03 14:13:28 [main] INFO transaction.exclude.url.patterns
+2022-05-03 14:13:28 [main] INFO   :\*
+2022-05-03 14:13:28 [main] INFO transaction.exclude.url.patterns=[\*]
+2022-05-03 14:13:28 [main] INFO transaction.exclude.user.agent.patterns
+2022-05-03 14:13:28 [main] INFO   :^openmaru-health-check$
+2022-05-03 14:13:28 [main] INFO transaction.exclude.user.agent.patterns=[^openmaru-health-check$]
+2022-05-03 14:13:28 [main] INFO ubt.check.enabled : false
+2022-05-03 14:13:28 [main] INFO ubt.check.type : ip
+2022-05-03 14:13:28 [main] INFO ubt.check.user.count : 100
+2022-05-03 14:13:28 [main] INFO ubt.check.time.interval : 1
+2022-05-03 14:13:28 [main] INFO ubt.check.alert.dup.prevent : 30
+2022-05-03 14:13:28 [main] INFO audit.log.enabled : false
+2022-05-03 14:13:28 [main] INFO audit.log.userIdKey : USER_ID
+2022-05-03 14:13:28 [main] INFO audit.log.dir : /Users/nahyeongkim/Downloads/khan-agent
+2022-05-03 14:13:28 [main] INFO audit.log.filename : audit-{date: yyyy-MM-dd}.log
+2022-05-03 14:13:28 [main] INFO audit.log.policies : daily: 00:00
+2022-05-03 14:13:28 [main] INFO audit.log.backups : 3
+2022-05-03 14:13:28 [main] INFO User Interceptor File: '/Users/nahyeongkim/Downloads/khan-agent/user-interceptor.conf' is empty. No User interceptor defined.
+2022-05-03 14:13:28 [main] INFO No user interceptor environment(KHAN_INTERCEPTORS) defined
+2022-05-03 14:13:28 [main] INFO [AgentConfigListener] Configuration listener initialized successfully.
+2022-05-03 14:13:29 [main] INFO [TracerStore] TracerStore size: 5000
+2022-05-03 14:13:29 [main] INFO All interceptors loaded successfully
+2022-05-03 14:13:29 [main] INFO No User interceptors file defined.
+2022-05-03 14:13:29 [main] INFO [OPENMARU Agent] OPENMARU agent initialized successfully.
+2022-05-03 14:13:29 [main] INFO [InstrumentationFilter] Package inclusion pattern used: java/sql/.*|java/io/.*|java/net/.*|javax/naming/.*|javax/rs/.*|sun/net/www/protocol/http/.*|
+2022-05-03 14:13:29 [main] INFO [InstrumentationFilter] Package exclusion pattern used: javax/.*|java/.*|sun/.*|org/w3c/dom/.*|org/xml/sax/.*|org/apache/xerces/.*|org/apache/xml/.*|com/sun/.*|com/arjuna/.*|com/ctc/.*|com/omg/.*|org/codehaus/stax2/.*|org/xnio/.*|org/picketbox/.*|__redirected/.*|org/apache/jasper/runtime/.*|com/opennaru/khan/agent/.*|com/javaservice/jennifer/.*|com/javaservice/lwst/.*|jennifer/.*|
+2022-05-03 14:13:29 [main] INFO  OPENMARU APM agent service started.
+2022-05-03 14:13:29 [main] INFO  Version : 5.1.0, Build : 1c588, Time : 2022-04-12 17:06:37
+2022-05-03 14:13:29 [main] INFO  Agent Home Path   : /Users/nahyeongkim/Downloads/khan-agent
+2022-05-03 14:13:29 [main] INFO  Agent Config File : khan-agent.conf
+2022-05-03 14:13:29 [main] INFO  Agent Config Path : /Users/nahyeongkim/Downloads/khan-agent
+2022-05-03 14:13:29 [main] INFO  Hostname          : Nahyeongui-MacBookPro.local
+2022-05-03 14:13:29 [main] INFO  Agent ID          : testapm11-0-1
+2022-05-03 14:13:29 [main] INFO  Agent IP          : 127.0.0.1
+2022-05-03 14:13:29 [main] INFO  APM Server       : p2022040004.apm.a-apne2.openmaru.io:443
+
+2022-05-03 14:13:29 [main] INFO [OPENMARU Agent] OPENMARU agent started successfully.
+2022-05-03 14:13:34 [khan-svc-mgr-1-thread-7] INFO WebSocketService URL=wss://p2022040004.apm.a-apne2.openmaru.io:443/monitoring/websocket
+2022-05-03 14:13:34 [khan-svc-mgr-1-thread-7] INFO Trying to connect OPENMARU APM server : wss://p2022040004.apm.a-apne2.openmaru.io:443/monitoring/websocket
+2022-05-03 14:13:37 [khan-svc-mgr-1-thread-7] ERROR initEnvironment: java.io.IOException: Cannot run program "/usr/bin/sh": error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at java.lang.Runtime.exec(Runtime.java:621)
+	at java.lang.Runtime.exec(Runtime.java:529)
+	at com.opennaru.khan.agent.h.a.c.gz(OPENMARU:98)
+	at com.opennaru.khan.agent.h.a.c.aZ(OPENMARU:108)
+	at com.opennaru.khan.agent.h.a.c.gy(OPENMARU:77)
+	at com.opennaru.khan.agent.h.a.c.gv(OPENMARU:53)
+	at com.opennaru.khan.agent.b.e.bt(OPENMARU:60)
+	at com.opennaru.khan.agent.b.e.br(OPENMARU:45)
+	at com.opennaru.khan.agent.a.b.y(OPENMARU:1627)
+	at com.opennaru.khan.agent.a.b.w(OPENMARU:1587)
+	at com.opennaru.khan.agent.g.n.fk(OPENMARU:192)
+	at com.opennaru.khan.agent.g.n.start(OPENMARU:83)
+	at com.opennaru.khan.agent.g.n.execute(OPENMARU:105)
+	at com.opennaru.khan.agent.f.f$1.run(OPENMARU:88)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:247)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:134)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	at java.lang.Runtime.exec(Runtime.java:621)
+	at java.lang.Runtime.exec(Runtime.java:529)
+	at com.opennaru.khan.agent.h.a.c.gz(OPENMARU:98)
+	at com.opennaru.khan.agent.h.a.c.aZ(OPENMARU:108)
+	at com.opennaru.khan.agent.h.a.c.gy(OPENMARU:77)
+	at com.opennaru.khan.agent.h.a.c.gv(OPENMARU:53)
+	at com.opennaru.khan.agent.b.e.bt(OPENMARU:60)
+	at com.opennaru.khan.agent.b.e.br(OPENMARU:45)
+	at com.opennaru.khan.agent.a.b.y(OPENMARU:1627)
+	at com.opennaru.khan.agent.a.b.w(OPENMARU:1587)
+	at com.opennaru.khan.agent.g.n.fk(OPENMARU:192)
+	at com.opennaru.khan.agent.g.n.start(OPENMARU:83)
+	at com.opennaru.khan.agent.g.n.execute(OPENMARU:105)
+	at com.opennaru.khan.agent.f.f$1.run(OPENMARU:88)
+	...
+2022-05-03 14:13:37 [khan-svc-mgr-1-thread-7] ERROR Exception : null
+2022-05-03 14:13:37 [nioEventLoopGroup-2-1] INFO Connected.
+2022-05-03 14:13:39 [khan-svc-mgr-1-thread-4] INFO Detected server : tomcat
+2022-05-03 14:13:39 [khan-svc-mgr-1-thread-9] INFO WebSocketService URL=wss://p2022040004.apm.a-apne2.openmaru.io:443/monitoring/websocket
+2022-05-03 14:13:39 [khan-svc-mgr-1-thread-9] INFO Trying to connect OPENMARU APM server : wss://p2022040004.apm.a-apne2.openmaru.io:443/monitoring/websocket
+2022-05-03 14:13:40 [khan-svc-mgr-1-thread-9] ERROR initEnvironment: java.io.IOException: Cannot run program "/usr/bin/sh": error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at java.lang.Runtime.exec(Runtime.java:621)
+	at java.lang.Runtime.exec(Runtime.java:529)
+	at com.opennaru.khan.agent.h.a.c.gz(OPENMARU:98)
+	at com.opennaru.khan.agent.h.a.c.aZ(OPENMARU:108)
+	at com.opennaru.khan.agent.h.a.c.gy(OPENMARU:77)
+	at com.opennaru.khan.agent.h.a.c.gv(OPENMARU:53)
+	at com.opennaru.khan.agent.b.e.bt(OPENMARU:60)
+	at com.opennaru.khan.agent.b.e.br(OPENMARU:45)
+	at com.opennaru.khan.agent.a.b.y(OPENMARU:1627)
+	at com.opennaru.khan.agent.a.b.w(OPENMARU:1587)
+	at com.opennaru.khan.agent.g.n.fk(OPENMARU:192)
+	at com.opennaru.khan.agent.g.n.start(OPENMARU:83)
+	at com.opennaru.khan.agent.g.n.execute(OPENMARU:105)
+	at com.opennaru.khan.agent.f.f$1.run(OPENMARU:88)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:247)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:134)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	at java.lang.Runtime.exec(Runtime.java:621)
+	at java.lang.Runtime.exec(Runtime.java:529)
+	at com.opennaru.khan.agent.h.a.c.gz(OPENMARU:98)
+	at com.opennaru.khan.agent.h.a.c.aZ(OPENMARU:108)
+	at com.opennaru.khan.agent.h.a.c.gy(OPENMARU:77)
+	at com.opennaru.khan.agent.h.a.c.gv(OPENMARU:53)
+	at com.opennaru.khan.agent.b.e.bt(OPENMARU:60)
+	at com.opennaru.khan.agent.b.e.br(OPENMARU:45)
+	at com.opennaru.khan.agent.a.b.y(OPENMARU:1627)
+	at com.opennaru.khan.agent.a.b.w(OPENMARU:1587)
+	at com.opennaru.khan.agent.g.n.fk(OPENMARU:192)
+	at com.opennaru.khan.agent.g.n.start(OPENMARU:83)
+	at com.opennaru.khan.agent.g.n.execute(OPENMARU:105)
+	at com.opennaru.khan.agent.f.f$1.run(OPENMARU:88)
+	...
+2022-05-03 14:13:40 [khan-svc-mgr-1-thread-9] ERROR Exception : null
+2022-05-03 14:13:40 [nioEventLoopGroup-3-1] INFO Connected.
+2022-05-03 14:13:42 [khan-svc-mgr-1-thread-10] INFO WebSocketService URL=wss://p2022040004.apm.a-apne2.openmaru.io:443/monitoring/websocket
+2022-05-03 14:13:42 [khan-svc-mgr-1-thread-10] INFO Trying to connect OPENMARU APM server : wss://p2022040004.apm.a-apne2.openmaru.io:443/monitoring/websocket
+2022-05-03 14:13:42 [khan-svc-mgr-1-thread-10] ERROR initEnvironment: java.io.IOException: Cannot run program "/usr/bin/sh": error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at java.lang.Runtime.exec(Runtime.java:621)
+	at java.lang.Runtime.exec(Runtime.java:529)
+	at com.opennaru.khan.agent.h.a.c.gz(OPENMARU:98)
+	at com.opennaru.khan.agent.h.a.c.aZ(OPENMARU:108)
+	at com.opennaru.khan.agent.h.a.c.gy(OPENMARU:77)
+	at com.opennaru.khan.agent.h.a.c.gv(OPENMARU:53)
+	at com.opennaru.khan.agent.b.e.bt(OPENMARU:60)
+	at com.opennaru.khan.agent.b.e.br(OPENMARU:45)
+	at com.opennaru.khan.agent.a.b.y(OPENMARU:1627)
+	at com.opennaru.khan.agent.a.b.w(OPENMARU:1587)
+	at com.opennaru.khan.agent.g.n.fk(OPENMARU:192)
+	at com.opennaru.khan.agent.g.n.start(OPENMARU:83)
+	at com.opennaru.khan.agent.g.n.execute(OPENMARU:105)
+	at com.opennaru.khan.agent.f.f$1.run(OPENMARU:88)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:247)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:134)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	at java.lang.Runtime.exec(Runtime.java:621)
+	at java.lang.Runtime.exec(Runtime.java:529)
+	at com.opennaru.khan.agent.h.a.c.gz(OPENMARU:98)
+	at com.opennaru.khan.agent.h.a.c.aZ(OPENMARU:108)
+	at com.opennaru.khan.agent.h.a.c.gy(OPENMARU:77)
+	at com.opennaru.khan.agent.h.a.c.gv(OPENMARU:53)
+	at com.opennaru.khan.agent.b.e.bt(OPENMARU:60)
+	at com.opennaru.khan.agent.b.e.br(OPENMARU:45)
+	at com.opennaru.khan.agent.a.b.y(OPENMARU:1627)
+	at com.opennaru.khan.agent.a.b.w(OPENMARU:1587)
+	at com.opennaru.khan.agent.g.n.fk(OPENMARU:192)
+	at com.opennaru.khan.agent.g.n.start(OPENMARU:83)
+	at com.opennaru.khan.agent.g.n.execute(OPENMARU:105)
+	at com.opennaru.khan.agent.f.f$1.run(OPENMARU:88)
+	...
+2022-05-03 14:13:42 [khan-svc-mgr-1-thread-10] ERROR Exception : null
+2022-05-03 14:13:42 [nioEventLoopGroup-4-1] INFO Connected.
+2022-05-03 14:13:44 [khan-svc-mgr-1-thread-8] INFO WebSocketService URL=wss://p2022040004.apm.a-apne2.openmaru.io:443/monitoring/websocket
+2022-05-03 14:13:44 [khan-svc-mgr-1-thread-8] INFO Trying to connect OPENMARU APM server : wss://p2022040004.apm.a-apne2.openmaru.io:443/monitoring/websocket
+2022-05-03 14:13:44 [khan-svc-mgr-1-thread-8] ERROR initEnvironment: java.io.IOException: Cannot run program "/usr/bin/sh": error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at java.lang.Runtime.exec(Runtime.java:621)
+	at java.lang.Runtime.exec(Runtime.java:529)
+	at com.opennaru.khan.agent.h.a.c.gz(OPENMARU:98)
+	at com.opennaru.khan.agent.h.a.c.aZ(OPENMARU:108)
+	at com.opennaru.khan.agent.h.a.c.gy(OPENMARU:77)
+	at com.opennaru.khan.agent.h.a.c.gv(OPENMARU:53)
+	at com.opennaru.khan.agent.b.e.bt(OPENMARU:60)
+	at com.opennaru.khan.agent.b.e.br(OPENMARU:45)
+	at com.opennaru.khan.agent.a.b.y(OPENMARU:1627)
+	at com.opennaru.khan.agent.a.b.w(OPENMARU:1587)
+	at com.opennaru.khan.agent.g.n.fk(OPENMARU:192)
+	at com.opennaru.khan.agent.g.n.start(OPENMARU:83)
+	at com.opennaru.khan.agent.g.n.execute(OPENMARU:105)
+	at com.opennaru.khan.agent.f.f$1.run(OPENMARU:88)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:247)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:134)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	at java.lang.Runtime.exec(Runtime.java:621)
+	at java.lang.Runtime.exec(Runtime.java:529)
+	at com.opennaru.khan.agent.h.a.c.gz(OPENMARU:98)
+	at com.opennaru.khan.agent.h.a.c.aZ(OPENMARU:108)
+	at com.opennaru.khan.agent.h.a.c.gy(OPENMARU:77)
+	at com.opennaru.khan.agent.h.a.c.gv(OPENMARU:53)
+	at com.opennaru.khan.agent.b.e.bt(OPENMARU:60)
+	at com.opennaru.khan.agent.b.e.br(OPENMARU:45)
+	at com.opennaru.khan.agent.a.b.y(OPENMARU:1627)
+	at com.opennaru.khan.agent.a.b.w(OPENMARU:1587)
+	at com.opennaru.khan.agent.g.n.fk(OPENMARU:192)
+	at com.opennaru.khan.agent.g.n.start(OPENMARU:83)
+	at com.opennaru.khan.agent.g.n.execute(OPENMARU:105)
+	at com.opennaru.khan.agent.f.f$1.run(OPENMARU:88)
+	...
+2022-05-03 14:13:44 [khan-svc-mgr-1-thread-8] ERROR Exception : null
+2022-05-03 14:13:44 [nioEventLoopGroup-5-1] INFO Connected.
+2022-05-03 14:13:46 [khan-svc-mgr-1-thread-4] INFO WebSocketService URL=wss://p2022040004.apm.a-apne2.openmaru.io:443/monitoring/websocket
+2022-05-03 14:13:46 [khan-svc-mgr-1-thread-4] INFO Trying to connect OPENMARU APM server : wss://p2022040004.apm.a-apne2.openmaru.io:443/monitoring/websocket
+2022-05-03 14:13:46 [khan-svc-mgr-1-thread-4] ERROR initEnvironment: java.io.IOException: Cannot run program "/usr/bin/sh": error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at java.lang.Runtime.exec(Runtime.java:621)
+	at java.lang.Runtime.exec(Runtime.java:529)
+	at com.opennaru.khan.agent.h.a.c.gz(OPENMARU:98)
+	at com.opennaru.khan.agent.h.a.c.aZ(OPENMARU:108)
+	at com.opennaru.khan.agent.h.a.c.gy(OPENMARU:77)
+	at com.opennaru.khan.agent.h.a.c.gv(OPENMARU:53)
+	at com.opennaru.khan.agent.b.e.bt(OPENMARU:60)
+	at com.opennaru.khan.agent.b.e.br(OPENMARU:45)
+	at com.opennaru.khan.agent.a.b.y(OPENMARU:1627)
+	at com.opennaru.khan.agent.a.b.w(OPENMARU:1587)
+	at com.opennaru.khan.agent.g.n.fk(OPENMARU:192)
+	at com.opennaru.khan.agent.g.n.start(OPENMARU:83)
+	at com.opennaru.khan.agent.g.n.execute(OPENMARU:105)
+	at com.opennaru.khan.agent.f.f$1.run(OPENMARU:88)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:247)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:134)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	at java.lang.Runtime.exec(Runtime.java:621)
+	at java.lang.Runtime.exec(Runtime.java:529)
+	at com.opennaru.khan.agent.h.a.c.gz(OPENMARU:98)
+	at com.opennaru.khan.agent.h.a.c.aZ(OPENMARU:108)
+	at com.opennaru.khan.agent.h.a.c.gy(OPENMARU:77)
+	at com.opennaru.khan.agent.h.a.c.gv(OPENMARU:53)
+	at com.opennaru.khan.agent.b.e.bt(OPENMARU:60)
+	at com.opennaru.khan.agent.b.e.br(OPENMARU:45)
+	at com.opennaru.khan.agent.a.b.y(OPENMARU:1627)
+	at com.opennaru.khan.agent.a.b.w(OPENMARU:1587)
+	at com.opennaru.khan.agent.g.n.fk(OPENMARU:192)
+	at com.opennaru.khan.agent.g.n.start(OPENMARU:83)
+	at com.opennaru.khan.agent.g.n.execute(OPENMARU:105)
+	at com.opennaru.khan.agent.f.f$1.run(OPENMARU:88)
+	...
+2022-05-03 14:13:46 [khan-svc-mgr-1-thread-4] ERROR Exception : null
+2022-05-03 14:13:46 [nioEventLoopGroup-6-1] INFO Connected.
