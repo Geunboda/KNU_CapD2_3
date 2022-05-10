@@ -14,6 +14,9 @@ repositories {
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'javax.servlet:jstl'
+	runtimeOnly 'mysql:mysql-connector-java'
+	implementation "org.apache.tomcat.embed:tomcat-embed-jasper"
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
