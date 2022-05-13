@@ -18,6 +18,11 @@ public class DumpController {
 //        this.mapper = mapper;
 //    }
 
+    @GetMapping("/api/test")
+    public String test(){
+        return "test";
+    }
+
     @PostMapping("/api/dump")
     public @ResponseBody String getDumpData(@RequestBody String dump){
         System.out.println(dump);
