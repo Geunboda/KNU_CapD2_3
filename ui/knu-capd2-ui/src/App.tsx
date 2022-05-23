@@ -22,22 +22,23 @@ const Content = styled.div`
 `;
 
 const TitleDiv = styled.div`
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: bold;
   display: flex;
   width: 100%;
   height: 15%;
   align-items: center;
   justify-content: center;
+  margin-bottom: -15px;
 `;
 
 const ResultDiv = styled.div`
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   display: flex;
   width: 100%;
   height: 8%;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 `;
 
 const Logos = styled.div`
@@ -60,13 +61,15 @@ function App() {
       <Div className="App">
         <Content style={{ marginRight: "8%" }}>
           <TitleDiv>
-            <h1 style={{ marginRight: "30%" }}>Patterns</h1>
+            <h1 style={{ marginRight: "25%" }}>Patterns</h1>
             <h1>probability</h1>
           </TitleDiv>
           {ModelResult.map((result, index) => (
             <ResultDiv>
-              <h1>{result.label}</h1>
-              <h1>{result.prob}%</h1>
+              <h1 style={{ width: "150px", marginRight: "25%" }}>
+                {result.label}
+              </h1>
+              <h1 style={{ width: "100px" }}>{result.prob}%</h1>
             </ResultDiv>
           ))}
         </Content>
