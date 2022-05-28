@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Thread Dump Prediction</title>
+  </head>
+  <body>
+    <form action="/predict" method="POST">
+      <p><textarea name="dump" cols="100" rows="30"></textarea></p>
+      <p><input type="submit" /></p>
+    </form>
+    <hr />
+    <form action="/predict" method="POST" enctype="multipart/form-data">
+      <p><input type="file" name="file" /></p>
+      <p><input type="submit" /></p>
+    </form>
+  </body>
+</html>
