@@ -88,6 +88,7 @@ def predict():
         tmp['className'] = annotation_payload.display_name
         tmp['classScore'] = annotation_payload.classification.score
         result.append(tmp)
+        print(json.dumps(result))
         # print(u"Predicted class name: {}".format(annotation_payload.display_name))
         # print(u"Predicted class score: {}".format(annotation_payload.classification.score))
 
