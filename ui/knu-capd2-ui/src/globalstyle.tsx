@@ -8,14 +8,6 @@ export const GlobalStyle = createGlobalStyle`
    margin:0;
    padding:0;
  }
- body{
-  font-family: 'Roboto';
- }
- @font-face {
-  font-family: 'Roboto';
-  src: url('fonts/Roboto-Regular.ttf');
-}
-
 input{
   :focus{
     outline: none;

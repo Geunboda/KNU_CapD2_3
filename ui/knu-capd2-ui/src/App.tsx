@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import "./App.css";
 import { GlobalStyle } from "./globalstyle";
-import Chart from "./components/Chart";
+import * as am4core from "@amcharts/amcharts4/core";
+import * as am4charts from "@amcharts/amcharts4/charts";
 
 const Div = styled.div`
   width: 100vw;
@@ -55,6 +56,53 @@ const Logo = styled.img`
   width: 20%;
 `;
 function App() {
+  const [data, setData] = useState<any[]>([]);
+  useEffect(() => {
+    async function fetchData() {
+      await fetch("/predict")
+        .then((response) => response.json())
+        .then((result) => setData(result));
+    }
+    fetchData();
+  }, []);
+
+  function Chart() {
+    useEffect(() => {
+      //chart instance 생성
+      let chart = am4core.create("chartdiv", am4charts.PieChart);
+      chart.data = data;
+
+      //series 추가 및 설정
+      let pieSeries = chart.series.push(new am4charts.PieSeries());
+      pieSeries.dataFields.value = "classScore";
+      pieSeries.dataFields.category = "className";
+
+      chart.innerRadius = am4core.percent(55);
+
+      chart.legend = new am4charts.Legend();
+      chart.legend.valueLabels.template.text = "{value.value}" + "%";
+
+      pieSeries.labels.template.disabled = true;
+      pieSeries.ticks.template.disabled = true;
+
+      pieSeries.slices.template.tooltipText = "{category}: {value.value}" + "%";
+
+      pieSeries.colors.list = [
+        am4core.color("#5B1A2A"),
+        am4core.color("#AF3B57"),
+        am4core.color("#EE7290"),
+        am4core.color("#ECA0B3"),
+        am4core.color("#F0CDD6"),
+        am4core.color("#F91C52"),
+        am4core.color("#FF8042"),
+        am4core.color("#AC1B3E"),
+        am4core.color("#DB9FAE"),
+        am4core.color("#FF003F"),
+      ];
+    }, []);
+    return <div id="chartdiv" style={{ width: "100%", height: "80%" }}></div>;
+  }
+
   return (
     <React.Fragment>
       <GlobalStyle />
@@ -64,12 +112,14 @@ function App() {
             <h1 style={{ marginRight: "25%" }}>Patterns</h1>
             <h1>probability</h1>
           </TitleDiv>
-          {ModelResult.map((result, index) => (
-            <ResultDiv>
-              <h1 style={{ width: "150px", marginRight: "25%" }}>
-                {result.label}
+          {data?.map((result, index) => (
+            <ResultDiv key={index}>
+              <h1 style={{ width: "150px", marginRight: "14%" }}>
+                {result["className"]}
               </h1>
-              <h1 style={{ width: "100px" }}>{result.prob}%</h1>
+              <h1 style={{ width: "155px" }}>
+                {result["classScore"].toFixed(10)}%
+              </h1>
             </ResultDiv>
           ))}
         </Content>
