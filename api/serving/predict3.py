@@ -85,13 +85,11 @@ def predict():
     tmp = {}
     # 상위 10개 json으로 변환하여 반환
     for annotation_payload in response.payload[0:10]:
-        tmp['className'] = annotation_payload.display_name
-        tmp['classScore'] = annotation_payload.classification.score
-        result.append(tmp)
-        print(json.dumps(result))
+        result.append({'className' : annotation_payload.display_name, 'classScore' : annotation_payload.classification.score})
         # print(u"Predicted class name: {}".format(annotation_payload.display_name))
         # print(u"Predicted class score: {}".format(annotation_payload.classification.score))
 
+    print(json.dumps(result))
     return json.dumps(result), 200
 
 
