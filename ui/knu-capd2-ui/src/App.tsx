@@ -80,12 +80,12 @@ function App() {
       chart.innerRadius = am4core.percent(55);
 
       chart.legend = new am4charts.Legend();
-      chart.legend.valueLabels.template.text = "{value.value}" + "%";
+      chart.legend.valueLabels.template.text = "{value.percent}%";
 
       pieSeries.labels.template.disabled = true;
       pieSeries.ticks.template.disabled = true;
 
-      pieSeries.slices.template.tooltipText = "{category}: {value.value}" + "%";
+      pieSeries.slices.template.tooltipText = "{category}: {value.percent}%";
 
       pieSeries.colors.list = [
         am4core.color("#5B1A2A"),
@@ -118,7 +118,7 @@ function App() {
                 {result["className"]}
               </h1>
               <h1 style={{ width: "155px" }}>
-                {result["classScore"].toFixed(10)}%
+                {(result["classScore"] * 100).toFixed(10)}%
               </h1>
             </ResultDiv>
           ))}
