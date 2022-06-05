@@ -5,11 +5,11 @@ import tempfile
 from flask import Flask, request, Response, render_template, jsonify
 import json
 
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "./kinetic-catfish-345711-4da05393be16.json"
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "./argon-acolyte-335901-fbbd5e747c15.json"
 
 # TODO(developer): Uncomment and set the following variables
-project_id = "kinetic-catfish-345711"
-model_id = "TCN3447576983007920128"
+project_id = "argon-acolyte-335901"
+model_id = "TCN4252313941423685632"
 
 app = Flask(__name__)
 
