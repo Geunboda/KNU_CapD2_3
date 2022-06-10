@@ -80,12 +80,12 @@ function App() {
       chart.innerRadius = am4core.percent(55);
 
       chart.legend = new am4charts.Legend();
-      chart.legend.valueLabels.template.text = "{value.percent}%";
+      chart.legend.valueLabels.template.text = "{value.value}";
 
       pieSeries.labels.template.disabled = true;
       pieSeries.ticks.template.disabled = true;
 
-      pieSeries.slices.template.tooltipText = "{category}: {value.percent}%";
+      pieSeries.slices.template.tooltipText = "{category}: {value.value}";
 
       pieSeries.colors.list = [
         am4core.color("#5B1A2A"),
@@ -106,7 +106,7 @@ function App() {
   return (
     <React.Fragment>
       <GlobalStyle />
-      <Div className="App">
+      <Div>
         <Content style={{ marginRight: "8%" }}>
           <TitleDiv>
             <h1 style={{ marginRight: "25%" }}>Patterns</h1>
@@ -132,22 +132,8 @@ function App() {
           </Logos>
         </Content>
       </Div>
-      ;
     </React.Fragment>
   );
 }
 
 export default App;
-
-const ModelResult = [
-  { label: "coyote-http", prob: 90 },
-  { label: "coyote-http2", prob: 25 },
-  { label: "cubrid", prob: 10 },
-  { label: "arjuna", prob: 8 },
-  { label: "empty", prob: 5 },
-  { label: "hazelcast", prob: 3 },
-  { label: "hazelcast-wait", prob: 1 },
-  { label: "coyote-1", prob: 0.77 },
-  { label: "coyote-ajp", prob: 0.3 },
-  { label: "ibatis-1", prob: 0.222 },
-];
