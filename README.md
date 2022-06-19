@@ -2,9 +2,10 @@
 경북대학교 종합설계프로젝트2 - 3팀
 
 - [1. 소개](#1-소개)
-- [2. 과제 목표](#2-과제목표)
-- [3. 과제 수행 결과](#3-과제수행결과)
-- [4.기대 효과 및 활용 방안](#4-기대효과및활용방안)
+- [2. 과제 목표](#2-과제-목표)
+- [3. 과제 수행 결과](#3-과제-수행-결과)
+- [4. 기대 효과 및 활용 방안](#4-기대-효과-및-활용-방안)
+- [5. 팀원](#5-팀원)
 
 ## 데모 영상
 [![Video Label](http://img.youtube.com/vi/N8ZlnIN8alM/0.jpg)](https://youtu.be/N8ZlnIN8alM))
@@ -33,13 +34,13 @@
 
 <br/>때문에 이러한 Thread Dump를 좀 더 체계적이고 효과적으로 분석할 수 있는 도구의 필요성이 대두되고 있다.
 
-## 2. 과제목표
+## 2. 과제 목표
 ![dump drawio (3)](https://user-images.githubusercontent.com/54229039/174466076-e09cbc1a-7fba-462f-b895-686b22344ba3.png)
 
  본 프로젝트에서는 Google Cloud Platform(이하, GCP)에서 제공하는 AutoML과 BERT를 활용하여 Thread Dump를 분석하는 자동화된 머신러닝 모델을 개발하고자 한다. 프로젝트의 전체적인 구조는 위 그림과 같다. 테스팅 환경을 통해 데이터를 직접 수집하고 분석한 후, 분석 모델을 통해 데이터를 분류하고 그 결과를 웹에 표시한다. OpenNaru의 OpenMaru APM인 Khan 서비스와 연계하여 현업에서도 쓰일 수 있도록 하고자 한다.
  Thread Dump 분석을 자동화하여 전문인력의 도움없이도 프로그램의 에러를 분석하고 이에 대응할 수 있도록 하는 것이 프로젝트의 최종 목적이다.
 
-## 3. 과제수행결과
+## 3. 과제 수행 결과
 ### 3-1. Thread Dump 분석 및 레이블링
 > ▼<그림> Java Thread Dump 3요소 분류
 
@@ -157,7 +158,7 @@
 
  React와 Typescript를 이용해서 AutoML 예측값을 각 라벨과 확률로 출력하는 UI를 개발했다. 웹의 최초 렌더링 시, API 호출을 통해 예측값을 요청하고, 그 반환 값을 텍스트 형식과 그래프 형식으로 출력한다. 여기서 그래프는 차트 라이브러리인 amcharts4를 사용했다.
  
- ## 4. 기대효과및활용방안
+ ## 4. 기대 효과 및 활용 방안
  <img width="374" alt="image" src="https://user-images.githubusercontent.com/54229039/174466568-5d3e5c4d-78bc-4937-af65-02e0e6e8c4f8.png">
 
 > ▲<표> 이경전, 황보유정. (2020). 인공지능과 생산성. 정보과학회지, 38(11), 8-16
@@ -185,7 +186,7 @@
 
 
 
-## . 팀원
+## 5. 팀원
 | Name    | 김보근                                     | 김나형                                   | 김다혜                                       | 옥명주                                 | 이현지                                 |
 | ------- | ---------------------------------------- | ---------------------------------------- | -------------------------------------------- | -------------------------------------- | -------------------------------------- |
 | Profile | <img width="200px" src="https://github.com/Geunboda.png" />                               | <img width="200px" src="https://github.com/lamknh.png" />                               | <img width="200px" src="https://github.com/Loreha0223.png" />                                   | <img width="200px" src="https://github.com/dhraudwn.png" />                             | <img width="200px" src="https://github.com/hyunji-lee99.png" />                    |
