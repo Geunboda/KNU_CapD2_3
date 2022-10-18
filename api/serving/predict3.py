@@ -1,3 +1,4 @@
+from statistics import mode
 from google.cloud import automl
 import os
 import re
@@ -5,11 +6,11 @@ import tempfile
 from flask import Flask, request, Response, render_template, jsonify
 import json
 
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "./argon-acolyte-335901-fbbd5e747c15.json"
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "./wired-climate-365112-2264adf2e586.json"
 
 # TODO(developer): Uncomment and set the following variables
-project_id = "argon-acolyte-335901"
-model_id = "TCN4252313941423685632"
+project_id = "wired-climate-365112"
+model_id = "TCN6093846384367108096"
 
 app = Flask(__name__)
 
@@ -33,7 +34,7 @@ def predict():
     # txt에서 값 가져오기
     with open("./dump.txt", "r", encoding='utf-8') as file:
         dump = file.read()
-    
+        
     jsonData = json.loads(dump)
     
     for key in jsonData.keys():
@@ -67,7 +68,6 @@ def predict():
 
     content = ' '.join(dehydrated_words)
     print(dehydrated_words, flush=True)
-
     # autoML Service Client 불러오기
     prediction_client = automl.PredictionServiceClient()
 
