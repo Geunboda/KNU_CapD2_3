@@ -2,7 +2,7 @@
   "name": "knu-capd2-ui",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://34.83.222.217:9090",
+  "proxy": "http://104.198.11.196:9090",
   "dependencies": {
     "@amcharts/amcharts4": "^4.10.25",
     "@testing-library/jest-dom": "^5.16.4",
