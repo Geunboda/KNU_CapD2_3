@@ -21,7 +21,7 @@ app = Flask(__name__)
 
 @app.route("/api/dump", methods=['POST'])
 def getDumpData():
-    data = request.json
+    data = request.get_json()
     print(data)
     with open("dump.txt","w", encoding='utf-8') as f:
         json.dump(data, f)
