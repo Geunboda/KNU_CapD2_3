@@ -33,19 +33,20 @@ const Input = styled.textarea`
   }
 `;
 
+const ButtonDiv = styled.div`
+  width: 70%;
+  margin-top: 20px;
+`;
 const Button = styled.button`
   background-color: #a36f89;
-  width: 15%;
-  height: 10%;
+  padding: 10px 20px;
   color: white;
-  font-size: 2rem;
+  font-size: 2em;
   border: none;
   border-radius: 8px;
   box-shadow: 3px 3px 3px #574144;
   letter-spacing: 2px;
-  position: absolute;
-  bottom: 2%;
-  right: 18.5%;
+  float: right;
 `;
 function RequestAPI() {
   const [input, setInput] = useState("");
@@ -71,7 +72,9 @@ function RequestAPI() {
         Enter the Java thread dump data and Click the Request button🆘
       </Intro>
       <Input onChange={inputChange}></Input>
-      <Button onClick={requestButton}>request!</Button>
+      <ButtonDiv>
+        <Button onClick={requestButton}>request!</Button>
+      </ButtonDiv>
     </Div>
   );
 }
