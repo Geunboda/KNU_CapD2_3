@@ -7,6 +7,10 @@
 - [4. 기대 효과 및 활용 방안](#4-기대-효과-및-활용-방안)
 - [5. 팀원](#5-팀원)
 
+## 참고 사항
+AutoML 접근을 위한 gcp 접근용 json 파일은 보안상의 이유로 github에 공개하고 있지 않으며
+필요시에 github Issues를 통한 문의 부탁합니다.
+
 ## 데모 영상
 [![Video Label](http://img.youtube.com/vi/N8ZlnIN8alM/0.jpg)](https://youtu.be/N8ZlnIN8alM))
 
