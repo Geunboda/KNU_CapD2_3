@@ -9,7 +9,10 @@
 
 ## 참고 사항
 AutoML 접근을 위한 gcp 접근용 json 파일은 보안상의 이유로 github에 공개하고 있지 않으며
-필요시에 github Issues를 통한 문의 부탁합니다.
+필요시에 오픈소스 커뮤니티인 디스코드 채널을 통한 문의 부탁합니다.
+
+## 디스코드 채널 가입 링크
+https://discord.gg/j45gfxCA
 
 ## 데모 영상
 [![Video Label](http://img.youtube.com/vi/N8ZlnIN8alM/0.jpg)](https://youtu.be/N8ZlnIN8alM))
