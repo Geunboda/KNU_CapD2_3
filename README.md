@@ -11,8 +11,40 @@
 AutoML 접근을 위한 gcp 접근용 json 파일은 보안상의 이유로 github에 공개하고 있지 않으며
 필요시에 오픈소스 커뮤니티인 디스코드 채널을 통한 문의 부탁합니다.
 
+## 사용 방법
+
+1. 깃허브 클론
+
+아래의 명령어를 입력해 본 레포지토리를 git clone합니다.
+```
+git clone https://github.com/Geunboda/KNU_CapD2_3.git
+```
+
+2. 서버 구동
+
+Python3를 먼저 install한 후, google, google-cloud-automl, flask를 설치합니다.
+```
+pip3 install google
+pip3 install google-cloud-automl
+pip3 install flask
+```
+
+아래의 폴더로 이동하여 서버를 구동합니다. 서버를 구동하기 전 json 파일을 폴더 아래로 이동시켜주십시오.
+```
+cd KNU_CapD2_3/api/serving
+python3 predict3.py
+```
+
+3. 리액트 웹 서버 구동
+
+호스팅한 웹 서버의 endpoint 주소를 변경하였는지 확인해주시고 React 웹을 실행하십시오.
+```
+cd ui/knu-capd2-ui
+npm start
+```
+
 ## 디스코드 채널 가입 링크
-https://discord.gg/j45gfxCA
+https://discord.gg/UXD5xSV4
 
 ## 데모 영상
 [![Video Label](http://img.youtube.com/vi/N8ZlnIN8alM/0.jpg)](https://youtu.be/N8ZlnIN8alM))
